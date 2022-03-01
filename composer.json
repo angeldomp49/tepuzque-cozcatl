@@ -1,7 +1,7 @@
 {
     "name": "makechtec/cozcatl",
     "description": "manejador de secuencias",
-    "license": "GPLv2",
+    "license": "MIT",
 
     "autoload": {
         "psr-4": {
