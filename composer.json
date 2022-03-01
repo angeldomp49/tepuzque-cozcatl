@@ -5,7 +5,15 @@
 
     "autoload": {
         "psr-4": {
-            "MakechTec\\Sequence\\": "src"
+            "MakechTec\\Coazcatl\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MakechTec\\Coazcatl\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
     }
 }

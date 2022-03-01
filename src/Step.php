@@ -1,12 +1,12 @@
 <?php 
-namespace MakechTec\Sequence;
+namespace MakechTec\Coazcatl;
 
 class Step{
 
-    private callable $action;
+    private $action;
     private Array $params;
 
-    public function __construct( callable $action, Array $params = [] ){
+    public function __construct( $action, Array $params = [] ){
         $this->action = $action;
         $this->params = $params;
     }
@@ -26,6 +26,7 @@ class Step{
 
     public function add( Array $param ){
         $this->params = array_merge($this->params, $param);
+        return $this;
     }
 
     public function do(){

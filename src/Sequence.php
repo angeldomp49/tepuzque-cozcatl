@@ -1,7 +1,7 @@
 <?php 
-namespace MakechTec\Sequence;
+namespace MakechTec\Coazcatl;
 
-use App\Sequence\Step;
+use MakechTec\Coazcatl\Step;
 
 class Sequence{
 
@@ -75,18 +75,18 @@ class Sequence{
     private function isMaxPointer( int $pointer){
         $sizeOfSteps = count( $this->steps );
         $sizeOfSteps--;
-        return ( $pointer >= $sizeOfSteps );
+        return ( $pointer > $sizeOfSteps );
     }
 
     private function isMinPointer( int $pointer){
-        return ( $pointer <= 0 );
+        return ( $pointer < 0 );
     }
 
     private function isOutOfRangePointer( int $pointer ){
         $sizeOfSteps = count( $this->steps );
         $sizeOfSteps--;
 
-        return ( ($pointer > $sizeOfSteps) || ($pointer < 0) );
+        return ( $this->isMaxPointer($pointer) || $this->isMinPointer($pointer) );
     }
 
 }
