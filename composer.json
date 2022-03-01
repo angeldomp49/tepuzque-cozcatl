@@ -1,0 +1,11 @@
+{
+    "name": "makechtec/cozcatl",
+    "description": "manejador de secuencias",
+    "license": "GPLv2",
+
+    "autoload": {
+        "psr-4": {
+            "MakechTec\\Sequence\\": "src"
+        }
+    }
+}
